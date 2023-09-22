@@ -28,12 +28,12 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, canvas.height, -1, -canvas.height);
-    // }
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+    for (let i = 100; i < canvas.width; i += 100) {
+      createPlatform(i, canvas.height, -1, -canvas.height);
+     }
+     for (let i = 100; i < canvas.height; i += 100) {
+       createPlatform(canvas.width, i, -canvas.width, -1);
+     }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -43,11 +43,11 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-    createPlatform(300, 630, 200, 10)
+    createPlatform(300, 630, 200, 20)
     createPlatform(550, 530, 200, 10)
-    createPlatform(800, 430, 200, 10)
+    createPlatform(800, 430, 200, 20)
     createPlatform(1050, 330, 200, 10)
-    createPlatform(1250, 230, 400, 10)
+    createPlatform(1250, 230, 400, 20)
 
 
     
@@ -57,7 +57,15 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-    createCollectable("database", 1130, 200, 70, .9)
+    createCollectable("database", 350, 300,)
+    createCollectable("max", 600, 300,1,1, )
+    createCollectable("database", 900, 300,)
+    createCollectable("max", 1100, 40,)
+    createCollectable("database", 1350, 40,)
+    createCollectable("max", 750, 300,)
+    createCollectable("database", 1300, 300, )
+    createCollectable("max", 650, 700,)  
+    createCollectable("database", 70, 300,)  
 
 
     // TODO 3
@@ -66,8 +74,12 @@ $(function () {
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-
-
+    createCannon("right", 530, 2100);
+    createCannon("left", 233, 2700);
+    createCannon("right", 140, 1400);
+    createCannon("left", 331, 3500);
+    createCannon("right", 373, 5000);
+    
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
