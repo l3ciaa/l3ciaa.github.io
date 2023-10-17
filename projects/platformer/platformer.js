@@ -63,8 +63,7 @@ $(function () {
     createCollectable("max", 1100, 40,)
     createCollectable("database", 1350, 40,)
     createCollectable("max", 750, 300,)
-    createCollectable("database", 1300, 300, )
-    createCollectable("max", 650, 700,)  
+ 
     createCollectable("database", 70, 300,)  
 
 
